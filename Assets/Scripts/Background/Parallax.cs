@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.PostProcessing;
+using UnityEngine.Rendering.Universal;
 
 public class Parallax : MonoBehaviour
 {
@@ -14,6 +17,10 @@ public class Parallax : MonoBehaviour
     /// </summary>
     [SerializeField]
     Color[] randomSpriteColors;
+
+    [SerializeField]
+    Volume volume;
+    SplitToning splitToning;
 
     SpriteRenderer spriteRenderer;
     SpriteRenderer currentSp;
@@ -72,6 +79,13 @@ public class Parallax : MonoBehaviour
         int randColorIndex = UnityEngine.Random.Range(0, randomSpriteColors.Length);
 
         var sprites = GetComponentsInChildren<SpriteRenderer>();
+
+        if (volume.profile.TryGet(out splitToning) == true)
+        {
+            splitToning.shadows.value = randomSpriteColors[randColorIndex];
+        }
+
+
         foreach (var sprite in sprites)
         {
             sprite.color = randomSpriteColors[randColorIndex];

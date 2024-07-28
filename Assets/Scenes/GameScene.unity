@@ -12572,16 +12572,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   randomSpriteColors:
-  - serializedVersion: 2
-    rgba: 255
-  - serializedVersion: 2
-    rgba: 16737792
-  - serializedVersion: 2
-    rgba: 4980480
-  - serializedVersion: 2
-    rgba: 58111
-  - serializedVersion: 2
-    rgba: 16715212
+  - {r: 0.0090067545, g: 0.0090067545, b: 0.4339623, a: 1}
+  - {r: 0.14866216, g: 0.3660378, b: 0.013122058, a: 1}
+  - {r: 0.4037736, g: 0.39081216, b: 0.017522207, a: 1}
+  - {r: 0.3509434, g: 0.007283723, b: 0.30512214, a: 1}
+  - {r: 0.007127083, g: 0.3433962, b: 0.28020462, a: 1}
+  - {r: 0.23018861, g: 0.23018861, b: 0.23018861, a: 1}
+  - {r: 0.4113207, g: 0.0023281965, b: 0.0023281965, a: 1}
+  volume: {fileID: 2464129762597516689}
 --- !u!1 &1691892809
 GameObject:
   m_ObjectHideFlags: 0
@@ -16385,6 +16383,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6989751422399882350, guid: 13ae0849a4ae52542b45202c4d7710de, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6989751422399882350, guid: 13ae0849a4ae52542b45202c4d7710de, type: 3}
       propertyPath: sharedProfile
       value: 
       objectReference: {fileID: 11400000, guid: 93a232dc0a7642b40a69d651a687e7e8, type: 2}
@@ -16398,6 +16400,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2464129762938747149, guid: 13ae0849a4ae52542b45202c4d7710de, type: 3}
   m_PrefabInstance: {fileID: 2464129762597516687}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2464129762597516689 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6989751422399882350, guid: 13ae0849a4ae52542b45202c4d7710de, type: 3}
+  m_PrefabInstance: {fileID: 2464129762597516687}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6110954957921169316
 PrefabInstance:
   m_ObjectHideFlags: 0
